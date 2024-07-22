@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: New Key
+  m_EditorClassIdentifier: Assembly-CSharp::KeyScriptableObject
+  keyPrefab: {fileID: 5976112617926223264, guid: b48478cde29ce3c48a41f4e0890dc802, type: 3}
+  keyID: 77
