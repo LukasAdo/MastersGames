@@ -82,10 +82,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2da294ef4490b5d418bbe655d427aa90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileType: 0
   _renderer: {fileID: 5216104671789331172}
   _highlight: {fileID: 8247745435765981131}
   isWalkable: 1
+  hero: {fileID: 0}
+  enemies: []
   OccupiedUnit: {fileID: 0}
+  gridX: 0
+  gridY: 0
+  gCost: 0
+  hCost: 0
   _baseColor: {r: 0.26303965, g: 0.5660378, b: 0.25453895, a: 1}
   _offsetColor: {r: 0.33989057, g: 0.6981132, b: 0.23489968, a: 1}
 --- !u!1 &8247745435765981131 stripped

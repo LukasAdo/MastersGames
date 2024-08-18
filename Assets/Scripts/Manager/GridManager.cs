@@ -9,6 +9,8 @@ public class GridManager : MonoBehaviour
     [SerializeField] private int _width, _height;
     [SerializeField] private Tile grassTile, mountainTile;
     [SerializeField] private Transform _cam;
+    [SerializeField] private Transform tilesParent; // Parent transform to hold the tiles
+
     private Dictionary<Vector2, Tile> _tiles;
 
     private void Awake()
@@ -25,7 +27,7 @@ public class GridManager : MonoBehaviour
             for (int y = 0; y < _height; y++)
             {
                 var randomTile = UnityEngine.Random.Range(0, 6) == 3 ? mountainTile : grassTile;
-                var spawnedTile = Instantiate(randomTile, new Vector3(x, y), Quaternion.identity);
+                var spawnedTile = Instantiate(randomTile, new Vector3(x, y), Quaternion.identity, tilesParent); // Set parent
                 spawnedTile.name = $"Tile {x} {y}";
                 spawnedTile.Init(x, y);
                 _tiles[new Vector2(x, y)] = spawnedTile;
@@ -62,5 +64,8 @@ public class GridManager : MonoBehaviour
         return _tiles.Where(t => t.Value.IsWalkable).OrderBy(t => UnityEngine.Random.value).FirstOrDefault().Value;
     }
 
-    
+    public List<Tile> GetAllWalkableTiles()
+    {
+        return _tiles.Where(t => t.Value.IsWalkable).Select(t => t.Value).ToList();
+    }
 }

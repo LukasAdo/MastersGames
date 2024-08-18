@@ -6,6 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/HomeScreen.unity
+    guid: ef45eed3d25a88e4a8cf34635561847d
+  - enabled: 1
+    path: Assets/Scenes/CoinCollection.unity
+    guid: 25b399e806ca01c4bb2fab054915af95
+  - enabled: 1
+    path: Assets/Scenes/AnimalScene.unity
+    guid: bf6a69d95b0d08c4caedb6091b22cdb8
+  - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/AttackScene.unity
+    guid: b454fbcf57b30d242b72b80f6177fa61
   m_configObjects: {}

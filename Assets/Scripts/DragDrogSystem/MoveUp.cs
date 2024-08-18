@@ -19,7 +19,3 @@ public class MoveUp : MoveBlock
     }
 }
 
-// Movement methods can remain as they are for direct movement
-
-// A* Pathfinding methods
-

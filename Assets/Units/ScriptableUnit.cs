@@ -43,6 +43,23 @@ public class DoorScriptableObject : ScriptableObject
     public GameObject doorPrefab; // Prefab of the door object
     public string requiredKeyID;  // Key ID required to unlock this door
 }
+[CreateAssetMenu(fileName = "New Chicken", menuName = "Scriptable Objects/Animals/Chicken")]
+public class ChickenScriptableObject : ScriptableObject
+{
+    public GameObject chickenPrefab; // Prefab of the chicken object
+   
+}
+[CreateAssetMenu(fileName = "New Cow", menuName = "Scriptable Objects/Animals/Cow")]
+public class CowScriptableObject : ScriptableObject
+{
+    public GameObject cowPrefab; // Prefab of the cow object
+   
+}
+[CreateAssetMenu(fileName = "New Pig", menuName = "Scriptable Objects/Animals/Pig")]
+public class PigScriptableObject : ScriptableObject
+{
+    public GameObject pigPrefab; // Prefab of the pig object
+}
 public enum Faction
 {
     Hero = 0,

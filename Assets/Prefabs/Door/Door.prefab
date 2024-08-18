@@ -133,4 +133,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22d2c9cb611710148a1c2178b614514c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorConfig: {fileID: 11400000, guid: 6c9b743354c1ec748a3301f28a79b3bf, type: 2}
+  requiredKeyID: 77

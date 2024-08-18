@@ -58,38 +58,51 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.6f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\IfElseBlock\AttackIfElse.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\MoveRight.cs" />
+    <Compile Include="Assets\Sprites\Tiles\Tile.cs" />
+    <Compile Include="Assets\Sprites\Tiles\GrassTile.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\MoveDown.cs" />
+    <Compile Include="Assets\Scripts\EqualityTileChecker\EqualityBlock.cs" />
     <Compile Include="Assets\Scripts\Manager\GridManager.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\DestroyEvent_HeroKnight.cs" />
     <Compile Include="Assets\Units\Heroes\BaseHeroes.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\DragDrop.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\Sensor_HeroKnight.cs" />
-    <Compile Include="Assets\Scripts\Tiles\MountainTile.cs" />
+    <Compile Include="Assets\Scripts\Tooltip\CoinBlockToolTip.cs" />
     <Compile Include="Assets\Scripts\Door and Key\BrokenKey.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\PlayButton.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyMovement.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\MoveBlock.cs" />
+    <Compile Include="Assets\Scripts\CoinCollection\CoinBlockDrop.cs" />
+    <Compile Include="Assets\Scripts\HomeScreenManager.cs" />
     <Compile Include="Assets\Scripts\Manager\UnitManager.cs" />
-    <Compile Include="Assets\Scripts\Tiles\Tile.cs" />
+    <Compile Include="Assets\Scripts\HeroesHealth\EnemyHealth.cs" />
+    <Compile Include="Assets\Scripts\Door and Key\KeyBlock.cs" />
+    <Compile Include="Assets\Scripts\Tooltip\TooltipController.cs" />
+    <Compile Include="Assets\Scripts\AnimalGenerator\AnimalGenerator.cs" />
+    <Compile Include="Assets\Scripts\Speech\LevelOne\LevelOneSpeech.cs" />
     <Compile Include="Assets\Scripts\Enemy\EnemyGenerator.cs" />
     <Compile Include="Assets\Units\BaseUnit.cs" />
     <Compile Include="Assets\Scripts\Door and Key\DoorKeyGenerator.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\ColorSwap\ColorSwap_HeroKnight.cs" />
     <Compile Include="Assets\Hero Knight - Pixel Art\Demo\HeroKnight.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\ItemSlot.cs" />
+    <Compile Include="Assets\Units\Enemies\EnemyHealthBar.cs" />
+    <Compile Include="Assets\Scripts\DragDrogSystem\BlockSpawner.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\MoveLeft.cs" />
-    <Compile Include="Assets\Scripts\Tiles\GrassTile.cs" />
     <Compile Include="Assets\Units\Heroes\HeroOne.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\CoinCollection\Coin.cs" />
     <Compile Include="Assets\Scripts\DragDrogSystem\MoveUp.cs" />
     <Compile Include="Assets\Units\ScriptableUnit.cs" />
     <Compile Include="Assets\Scripts\Door and Key\Door.cs" />
-    <Compile Include="Assets\Scripts\Enemy\AStarPathfinding.cs" />
     <Compile Include="Assets\Scripts\Door and Key\Key.cs" />
+    <Compile Include="Assets\Sprites\Tiles\MountainTile.cs" />
     <Compile Include="Assets\Units\Enemies\EnemyOne.cs" />
     <Compile Include="Assets\Units\Enemies\BaseEnemies.cs" />
+    <Compile Include="Assets\Scripts\HeroesHealth\HeroHealth.cs" />
+    <Compile Include="Assets\Scripts\EqualityTileChecker\TileChecker.cs" />
     <Compile Include="Assets\Scripts\CoinCollection\CoinGenerator.cs" />
   </ItemGroup>
   <ItemGroup>

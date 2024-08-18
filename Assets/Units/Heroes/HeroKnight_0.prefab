@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 745609108141095218}
   - component: {fileID: -5687893895921658865}
   - component: {fileID: -7419278177945021706}
+  - component: {fileID: 6485748214856127256}
   m_Layer: 0
   m_Name: HeroKnight_0
   m_TagString: Player
@@ -100,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OccupiedTile: {fileID: 0}
+  Faction: 0
 --- !u!58 &-5687893895921658865
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -132,9 +134,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008014962, y: 0.3921946}
+  m_Offset: {x: -0.038070418, y: 0.5535543}
   serializedVersion: 2
-  m_Radius: 0.37611035
+  m_Radius: 0.85251105
 --- !u!50 &-7419278177945021706
 Rigidbody2D:
   serializedVersion: 4
@@ -162,3 +164,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6485748214856127256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3205595124512737122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15559ac8f3ad4ca4c9348225b337f7ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroName: Hero
+  maxHealth: 10
+  currentHealth: 10
+  damage: 10
+  gridPosition: {x: 0, y: 0}

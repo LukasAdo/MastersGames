@@ -52,6 +52,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: MountainTile
       objectReference: {fileID: 0}
+    - target: {fileID: 7609620367121490517, guid: fa9e84d7078988240807699450c852b9, type: 3}
+      propertyPath: m_TagString
+      value: Mountain
+      objectReference: {fileID: 0}
+    - target: {fileID: 7924521301750812196, guid: fa9e84d7078988240807699450c852b9, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8749510496886475778, guid: fa9e84d7078988240807699450c852b9, type: 3}
       propertyPath: m_Color.b
       value: 0.15886433
@@ -94,8 +102,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4b3a7572b18f1b4cbcbfffa86a77837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tileType: 0
   _renderer: {fileID: 369884002863626389}
   _highlight: {fileID: 4554446391990367674}
+  isWalkable: 0
+  hero: {fileID: 0}
+  enemies: []
+  OccupiedUnit: {fileID: 0}
+  gridX: 0
+  gridY: 0
+  gCost: 0
+  hCost: 0
 --- !u!1 &4554446391990367674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4862253887506366765, guid: fa9e84d7078988240807699450c852b9, type: 3}

@@ -1,24 +1,22 @@
-using System.Collections;
 using UnityEngine;
 
 public class Coin : MonoBehaviour
 {
-    public CoinScriptableObject coinConfig; // Assign in Inspector
+    public int coinValue = 1; // Coin value to be assigned in the Inspector
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Trigger entered!");
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Coin collected by player!");
             CollectCoin();
         }
     }
 
     private void CollectCoin()
     {
-        GameManager.Instance.AddScore(coinConfig.coinValue); // Add score based on coin value
-        Debug.Log($"Added {coinConfig.coinValue} to score.");
+        GameManager.Instance.AddScore(coinValue); // Add score based on coin value
+        Debug.Log($"Added {coinValue} to score.");
+        GameManager.Instance.CollectCoin(); // Notify GameManager of coin collection
         Destroy(gameObject); // Destroy the coin object
     }
 }

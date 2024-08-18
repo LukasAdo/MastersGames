@@ -10,8 +10,6 @@ public abstract class MoveBlock : MonoBehaviour, IDragHandler, IEndDragHandler
     public Button moveButton; // Reference to the UI Button for character movement
     protected bool isInDropZone = false; // Track if the block is in any drop zone
 
-    [SerializeField] private BaseUnit selectedUnit; // Reference to the selected unit (hero)
-
     void Start()
     {
         if (moveButton == null)

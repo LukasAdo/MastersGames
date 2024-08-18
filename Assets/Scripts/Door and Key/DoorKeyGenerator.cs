@@ -2,20 +2,26 @@ using UnityEngine;
 
 public class DoorKeyGenerator : MonoBehaviour
 {
-    public KeyScriptableObject keyConfig; // Reference to the Key Scriptable Object
-    public DoorScriptableObject doorConfig; // Reference to the Door Scriptable Object
-    public BrokenKeyScriptableObject brokenKeyConfig;
-    public GridManager gridManager; // Reference to the GridManager
+    public GameObject keyPrefab;         // GameObject for the key prefab
+    public GameObject doorPrefab;        // GameObject for the door prefab
+    public GameObject brokenKeyPrefab;   // GameObject for the broken key prefab
+    public GridManager gridManager;      // Reference to the GridManager
 
     // Method to generate keys at random walkable positions
     public void GenerateKeys(int count)
     {
+        if (keyPrefab == null)
+        {
+            Debug.LogError("Key prefab is not assigned.");
+            return;
+        }
+
         for (int i = 0; i < count; i++)
         {
             Tile tile = gridManager.GetRandomWalkableTile();
             if (tile != null)
             {
-                Instantiate(keyConfig.keyPrefab, tile.transform.position, Quaternion.identity);
+                Instantiate(keyPrefab, tile.transform.position, Quaternion.identity);
             }
             else
             {
@@ -27,12 +33,18 @@ public class DoorKeyGenerator : MonoBehaviour
     // Method to generate doors at random walkable positions
     public void GenerateDoors(int count)
     {
+        if (doorPrefab == null)
+        {
+            Debug.LogError("Door prefab is not assigned.");
+            return;
+        }
+
         for (int i = 0; i < count; i++)
         {
             Tile tile = gridManager.GetRandomWalkableTile();
             if (tile != null)
             {
-                Instantiate(doorConfig.doorPrefab, tile.transform.position, Quaternion.identity);
+                Instantiate(doorPrefab, tile.transform.position, Quaternion.identity);
             }
             else
             {
@@ -40,14 +52,22 @@ public class DoorKeyGenerator : MonoBehaviour
             }
         }
     }
+
+    // Method to generate broken keys at random walkable positions
     public void GenerateBrokenKeys(int count)
     {
+        if (brokenKeyPrefab == null)
+        {
+            Debug.LogError("Broken key prefab is not assigned.");
+            return;
+        }
+
         for (int i = 0; i < count; i++)
         {
             Tile tile = gridManager.GetRandomWalkableTile();
             if (tile != null)
             {
-                Instantiate(brokenKeyConfig.brokenKeyPrefab, tile.transform.position, Quaternion.identity);
+                Instantiate(brokenKeyPrefab, tile.transform.position, Quaternion.identity);
             }
             else
             {
